@@ -28,7 +28,7 @@ justify-content: space-evenly;
 
 .form-place{
     outline: none;
-    width: 300px;
+    width: 250px;
     height: 50px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -37,7 +37,7 @@ justify-content: space-evenly;
 }
 .form-time{
  outline: none;
- width: 300px;
+ width: 250px;
  height: 60px;
  background-color: #ffff;
  font-size: 12px;
@@ -51,7 +51,7 @@ justify-content: space-evenly;
 
 .form-people{
  outline: none;
- width: 300px;
+ width: 250px;
  height: 50px;
  box-shadow: 1px 1px 10px -5px rgba(0,0,0,0.75);
  border: 4px solid #febb02;   
