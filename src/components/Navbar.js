@@ -50,6 +50,7 @@ const [nav, setNav] = useState(true)
               src="../assets/images/booking-logo.png"
               alt="booking-mobile_logo"
               layout="fixed"
+              placeholder="tracedSVG"
               className="booking-mobile_logo"
             />
       <NavbarBurger onClick={()=>setNav(!nav)}>
@@ -63,6 +64,7 @@ const [nav, setNav] = useState(true)
               src="../assets/images/booking-logo.png"
               alt="booking-logo"
               layout="fixed"
+              placeholder="tracedSVG"
               className="booking-logo"
             />
             <div className="info-buttons">
@@ -72,6 +74,7 @@ const [nav, setNav] = useState(true)
                 src="../assets/images/question-mark.png"
                 alt="question-mark"
                 className="ask-btn"
+                placeholder="tracedSVG"
               />
               <button className="share-btn">Udostępnij obiekt</button>
               <button className="log-btn">Zarejestruj się</button>
@@ -84,6 +87,7 @@ const [nav, setNav] = useState(true)
                 src="../assets/images/bed-icon.png"
                 alt="bed-icon"
                 layout="fixed"
+                placeholder="tracedSVG"
               />
               <p>Pobyty</p>
             </div>
@@ -92,6 +96,7 @@ const [nav, setNav] = useState(true)
                 src="../assets/images/plane-icon.png"
                 alt="plane-icon"
                 layout="fixed"
+                placeholder="tracedSVG"
               />
               <p>Loty</p>
             </div>
@@ -100,6 +105,7 @@ const [nav, setNav] = useState(true)
                 src="../assets/images/car-icon.png"
                 alt="car-icon"
                 layout="fixed"
+                placeholder="tracedSVG"
               />
               <p>Wynajem samochodów</p>
             </div>
@@ -108,6 +114,7 @@ const [nav, setNav] = useState(true)
                 src="../assets/images/atractions-icon.png"
                 alt="atractions-icon"
                 layout="fixed"
+                placeholder="tracedSVG"
               />
               <p>Atrakcje</p>
             </div>
@@ -116,6 +123,7 @@ const [nav, setNav] = useState(true)
                 src="../assets/images/taxi-icon.png"
                 alt="taxi-icon"
                 layout="fixed"
+                placeholder="tracedSVG"
               />
               <p>Taksówki lotniskowe</p>
             </div>
@@ -130,6 +138,7 @@ const [nav, setNav] = useState(true)
                 src="../assets/images/info-icon.png"
                 alt="info-icon"
                 layout="fixed"
+                placeholder="tracedSVG"
               />
               <p>Koronawirus (COVID-19) - wsparcie</p>
             </div>
@@ -138,6 +147,7 @@ const [nav, setNav] = useState(true)
                 src="../assets/images/arrow-icon.png"
                 alt="arrow-icon"
                 layout="constrained"
+                placeholder="tracedSVG"
                 width={20}
                 height={20}
                 onClick={()=>setShow(!show)}
