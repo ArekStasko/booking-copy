@@ -1,0 +1,99 @@
+.start-container{
+background-color: #f5f5f5;
+margin-top: 0;
+width: 100%;
+height: 300px;
+display: flex;
+justify-content: center;
+border-bottom: 2px solid #f0f0f0;
+}
+
+.form-wrapper{
+width: 70%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+.form-description h2 {
+    margin: 0px;
+    font-weight: 500;
+}
+
+.form-description p {
+    margin-top: 0;
+    font-weight: 300;
+}
+
+.form-place{
+    outline: none;
+    width: 300px;
+    height: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 4px solid #febb02; 
+    box-shadow: 1px 1px 10px -5px rgba(0,0,0,0.75);
+}
+.form-time{
+ outline: none;
+ width: 300px;
+ height: 60px;
+ background-color: #ffff;
+ font-size: 12px;
+ border: 4px solid #febb02;   
+ box-shadow: 1px 1px 10px -5px rgba(0,0,0,0.75);
+}
+
+.react-calendar{
+    border: none;
+}
+
+.form-people{
+ outline: none;
+ width: 300px;
+ height: 50px;
+ box-shadow: 1px 1px 10px -5px rgba(0,0,0,0.75);
+ border: 4px solid #febb02;   
+}
+
+.form-btn{
+    outline: none;
+    width: 150px;
+    height: 60px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 4px solid #febb02; 
+    background-color: #0071c2;
+    color: white;
+    font-weight: 700;
+    font-size: 10px;
+}
+
+.business-checkbox{
+    margin-top: 10px;
+}
+
+.business-checkbox input {
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .start-container{
+        height: 600px;
+        }
+        
+        .form-wrapper{
+        width: 90%;
+        }
+    }
+
+
+    @media (max-width: 425px){
+            .form-place,
+            .form-time,
+            .form-people{
+                width: 250px;
+                height: 50px;
+            }
+        }

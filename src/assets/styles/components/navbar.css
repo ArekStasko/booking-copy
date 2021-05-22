@@ -1,0 +1,194 @@
+.navbar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background-color: #003580;
+    color: #ffff;
+}
+
+.navbar-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    height: 100%;
+}
+
+.info-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.booking-mobile_logo{
+    display: none;
+}
+
+.categories-wrapper{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+}
+
+.category{
+    -webkit-text-size-adjust: none;
+    height: 50px;
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.category p {
+    margin-left: 5px;
+}
+
+.categories-wrapper div:hover{
+    background-color: #00438f;
+}
+
+.info-buttons{
+    display: flex;
+    align-items: center;
+}
+
+.ask-btn{
+    cursor: pointer;   
+}
+
+.curr-btn{
+    cursor: pointer;   
+}
+
+.flag-btn{
+    background: linear-gradient(0deg, rgba(255,0,0,1) 54%, rgba(255,255,255,1) 54%);
+    width: 25px;
+    height: 25px;
+    border-radius: 60px;
+    margin: 0px 20px 0px 20px;
+    cursor: pointer;
+}
+
+.share-btn{
+    color: #ffff;
+    background-color: transparent;
+    border: 1px solid #ffff;
+    border-radius: 2px;
+    width: 150px;
+    height: 35px;
+    font-weight: 600;
+    margin: 0px 10px 0px 10px;
+}
+
+.log-btn{
+    color: #0373c3;
+    border: 1px solid #107ac6;
+    border-radius: 2px;
+    width: 110px;
+    height: 35px;
+    font-weight: 600;
+    margin: 0px 5px 0px 5px;
+}
+
+.coronavirus-info{
+    width: 100%;
+    height: 150px;
+    margin-top: 0;
+    background-color: #fff0e0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.non-active_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.non-active_wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.non-active_wrapper p {
+   margin-left: 20px;
+   font-weight: 700;
+}
+
+.non-active_info{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info-btn{
+    cursor: pointer;
+}
+
+.coronavirus-description{
+    width: 55%;
+}
+
+.coronavirus-description p{
+    font-size: 10px;
+}
+
+.coronavirus-description a{
+    font-size: 10px;
+}
+
+
+@media (max-width: 768px){
+.booking-mobile_logo{
+    display: inherit;
+    z-index: 2;
+}
+
+.booking-logo{
+    display: none;
+}
+
+.navbar-container{
+    justify-content: space-around;
+}
+
+.info-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 250px;
+}
+
+.navbar-wrapper{
+    position: absolute;
+    top: 0;
+    background-color: #003580;
+    color: #ffff;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.non-active_info{
+    width: 100%;
+}
+
+.coronavirus-description{
+    width: 90%;
+}
+   
+}

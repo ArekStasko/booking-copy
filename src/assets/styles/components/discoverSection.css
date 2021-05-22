@@ -1,0 +1,87 @@
+.discover-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discover-wrapper{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.discover-wrapper h2{
+    align-self: flex-start;
+}
+
+.discover_categories-wrapper{
+display: flex;
+justify-self: flex-end;
+align-self: flex-end;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.discover_categories-wrapper button{
+    color: white;
+    border: none;
+    margin: 3px;
+}
+
+.discover_categories-wrapper a {
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 10px;
+    color: #2083ca;
+}
+
+.discover_elements-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.discover-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    height: 160px;
+    margin: 20px;
+    font-weight: 100;
+    font-size: 10px;
+    text-align: center;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.discover-image{
+    width: 200px;
+    height: 110px;
+    background-size: cover;
+    background-position: center;
+}
+
+.discover-element:hover .discover-description{
+    height: 110px;
+}
+
+.discover-description{
+width: 200px;
+height: 30px;
+overflow: hidden;
+text-overflow: ellipsis;
+background-color: rgba(0, 0, 0, 0.4);
+color: #ffff;
+}
+
+.discover-element:hover a {
+    color: #FF8C00;
+}
+
+.discover-element a {
+ text-decoration: none;
+ color: #2083ca;
+}

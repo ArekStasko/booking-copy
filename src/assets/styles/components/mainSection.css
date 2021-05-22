@@ -1,0 +1,52 @@
+.main_section-container{
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;  
+align-items: center;
+}
+
+.slider-wrapper{
+    width: 70%;
+}
+
+.poland-header{
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.poland-description{
+  font-weight: 100;
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.object-wrapper{
+  width: 200px !important;
+}
+
+.object-wrapper p:first-of-type{
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.object-wrapper p:last-of-type{
+  font-weight: 100;
+  font-size: 10px;
+}
+
+.image-object{
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 2px;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  color: black;
+}
+  

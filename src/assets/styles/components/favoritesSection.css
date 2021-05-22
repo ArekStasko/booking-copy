@@ -1,0 +1,48 @@
+.favorites-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.favorites-wrapper{
+    width: 70%;
+}
+
+.favorites_categories-wrapper{
+    display: flex;
+    border-bottom: 1px solid #0071c2;
+}
+
+.favorites_categories-wrapper button{
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 12px;
+    border: none;
+}
+
+.favorites_elements-wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.favorite-element{
+    width: 140px;
+    font-size: 10px;
+    margin: 10px
+}
+
+.favorite-element a{
+    text-decoration: none;
+    color: #0071c2;
+}
+
+.favorite-element p{
+    color: #838383;
+    margin: 0;
+    font-weight: 100;
+}
