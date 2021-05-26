@@ -12,7 +12,6 @@ html, body{
 button{
    outline:none;
    cursor: pointer;
-
    :hover{
       opacity: 0.9;
    }
