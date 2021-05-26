@@ -32,6 +32,7 @@
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
+  margin: 0px 10px;
 }
 
 .form-description {
@@ -191,6 +192,7 @@ input::placeholder {
   font-weight: 700;
   font-size: 20px;
   border: none;
+  border-radius: 3px;
 }
 
 .place-form {
@@ -212,19 +214,35 @@ input::placeholder {
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .form-wrapper {
-    margin: 10px;
-    padding: 10px;
+    flex-direction: column;
+    background-color: #febb02;
+    padding: 2px 2px 2px 1px;
   }
 
   .place-form,
   .calendar-form,
   .person-form {
-    width: 100%;
-    margin: 5px 0px;
+    width: 90%;
+    margin: 3px 0px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+
+   .calendar_input-group input{
+     margin: 5px;
+   }
+  
+  .form-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-btn button {
+    width: 90%;
   }
 }
