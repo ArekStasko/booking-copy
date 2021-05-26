@@ -17,8 +17,10 @@ const FavoritesSection = () => {
 
   return (
     <div className="favorites-container">
-      <h2>Nasze ulubione miejsca</h2>
       <div className="favorites-wrapper">
+      <div className='favorites-header'>
+      <h2>Nasze ulubione miejsca</h2>
+      </div>
         <div className="favorites_categories-wrapper">
           {types.map(item => (
             <Btn 

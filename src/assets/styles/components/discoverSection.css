@@ -1,87 +1,121 @@
-.discover-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.discover-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.discover-wrapper{
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.discover-wrapper {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.discover-wrapper h2{
-    align-self: flex-start;
+.discover-wrapper h2 {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
-.discover_categories-wrapper{
-display: flex;
-justify-self: flex-end;
-align-self: flex-end;
-align-items: center;
-flex-wrap: wrap;
+.discover_categories-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.discover_categories-wrapper button{
-    color: white;
-    border: none;
-    margin: 3px;
+.discover_categories-wrapper button {
+  color: white;
+  border: none;
+  margin: 3px;
 }
 
 .discover_categories-wrapper a {
-    text-decoration: none;
-    font-weight: 100;
-    font-size: 10px;
-    color: #2083ca;
+  text-decoration: none;
+  font-weight: 100;
+  font-size: 10px;
+  color: #2083ca;
 }
 
-.discover_elements-wrapper{
-    display: flex;
-    flex-wrap: wrap;
+.discover_elements-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.discover-element{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 200px;
-    height: 160px;
-    margin: 20px;
-    font-weight: 100;
-    font-size: 10px;
-    text-align: center;
-    text-overflow: ellipsis;
-    cursor: pointer;
+.discover-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 200px;
+  height: 160px;
+  margin: 10px;
+  font-weight: 100;
+  font-size: 10px;
+  text-align: center;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  cursor: pointer;
 }
 
-.discover-image{
-    width: 200px;
-    height: 110px;
-    background-size: cover;
-    background-position: center;
+.discover-image {
+  width: 200px;
+  height: 130px;
+  background-size: cover;
+  background-position: center;
 }
 
-.discover-element:hover .discover-description{
-    height: 110px;
+.discover-element:hover .discover-description {
+  height: 130px;
 }
 
-.discover-description{
-width: 200px;
-height: 30px;
-overflow: hidden;
-text-overflow: ellipsis;
-background-color: rgba(0, 0, 0, 0.4);
-color: #ffff;
+.discover-description {
+  width: 200px;
+  height: 30px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #ffff;
 }
 
 .discover-element:hover a {
-    color: #FF8C00;
+  color: #ff8c00;
 }
 
 .discover-element a {
- text-decoration: none;
- color: #2083ca;
+  text-decoration: none;
+  color: #2083ca;
 }
