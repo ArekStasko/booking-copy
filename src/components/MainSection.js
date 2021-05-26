@@ -39,6 +39,7 @@ const MainSection = () => {
   `)
 
     const settings = {
+
         speed: 500,
         slidesToShow: 5,
         slidesToScroll: 1,
@@ -70,7 +71,7 @@ const MainSection = () => {
         <div className='main_section-container'>
           <div className='slider-wrapper'>
             <h2>Szukaj według rodzaju obiektu</h2>
-            <Slider {...settings}>
+            <Slider {...settings} >
             {data.allMdx.nodes.filter(item=> item.frontmatter.category === 'objects').map((item, index)=>(
                 <div key={index} className='object-wrapper'>
                   <ImageElement className='image-object' background={item.frontmatter.image.childImageSharp.fluid.src} />  
@@ -94,7 +95,7 @@ const MainSection = () => {
                 )
             )}
              </Slider>
-          </div>
+             </div>
           <Offer/>
           <Inspirations/>
           <Houses/>

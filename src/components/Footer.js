@@ -5,30 +5,39 @@ import "../assets/styles/components/footer.css"
 
 const shareLinks = ['Wersja na telefon','Twoje konto','Wprowadzaj zmiany w rezerwacji online','Skontaktuj się z obsługą klienta','Zostań naszym Partnerem Afiliacyjnym','Booking.com dla Biznesu']
 const links = [
+  [
     "Kraje",
     "Regiony",
     "Miasta",
     "Dzielnice",
     "Lotniska",
     "Hotele",
-    "Ciekawe miejsca",
+    "Ciekawe miejsca"
+  ],
+  [
     "Domy",
     "Apartamenty",
     "Ośrodki wypoczynkowe",
     "Wille",
     "Hostele",
     "Obiekty B&B",
-    "Pensjonaty",
+    "Pensjonaty"
+  ],
+  [
     "Wyjątkowe miejsca na pobyt",
     "Wszystkie cele podróży",
     "Opinie",
     "Artykuły",
     "Społeczności podróżujących",
-    "Oferty sezonowe i wakacyjne",
+    "Oferty sezonowe i wakacyjne"
+  ],
+  [
     "Wypożyczalnia samochodów",
     "Wyszukiwarka lotów",
     "Rezerwacja restauracji",
-    "Booking.com dla Biur Podróży",
+    "Booking.com dla Biur Podróży"
+  ],
+  [
     "Często zadawane pytania dotyczące koronawirusa (COVID-19)",
     "O Booking.com",
     "Skontaktuj się z obsługą klienta",
@@ -44,6 +53,7 @@ const links = [
     "Oświadczenie o ochronie prywatności i plikach cookies",
     "Zarządzaj ustawieniami dotyczącymi prywatności",
     "Kontakt dla firm"
+  ]
 ]
 
 const Footer = () => {
@@ -78,15 +88,23 @@ const Footer = () => {
         </div>
         </div>
         <div className='footer_links-wrapper'>
-         {links.map((item, index)=>(
-             <div key={index}>
-             <Link to='/'>{item}</Link>
-             </div>
+         {links.map(item=>(
+           <div>
+             {
+              item.map((i, index)=>(
+              <div key={index}>
+              <Link to='/'>{i}</Link>
+              </div>
+             ))
+            }
+          </div>
          ))}
         </div>
         <div className='footer_end-container'>
          <Link to='/'>Logowanie do Extranetu</Link>
+         <div className='footer_authority-wrapper'>
          <p className='footer-authority'>Prawa autorskie © 1996–2021 Booking.com™. Wszelkie prawa zastrzeżone.</p>
+         </div>
          <div className='booking_holdings-wrapper'>
            <p>Booking.com jest częścią Booking Holdings Inc. – światowego lidera w internetowej branży turystycznej.</p>
            <div className='booking_holdings-logos'>

@@ -1,20 +1,29 @@
-.houses-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  
-    align-items: center;
+.houses-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-.houses_slider-wrapper{
-    width: 70%;
+.houses_slider-wrapper {
+  width: 60%;
 }
 
-.house-wrapper:hover .house-name{
-  color:#FF8C00;
+.house-wrapper:hover .house-name {
+  color: #ff8c00;
 }
 
-.image-house{
+.image-house {
   cursor: pointer;
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,48 +38,58 @@
   color: black;
 }
 
-.house-name{
- font-size: 10px;
- color: #2083ca;
- margin-bottom: 0;
+.house-name {
+  font-size: 10px;
+  color: #2083ca;
+  margin-bottom: 0;
 }
 
-.house-place{
- font-size: 10px;
- color:#6e6e6e;
- margin-top: 0;
+.house-place {
+  font-size: 10px;
+  color: #6e6e6e;
+  margin-top: 0;
 }
 
-.house-price{
-    font-size: 10px;
-    font-weight: 700;
+.house-price {
+  font-size: 10px;
+  font-weight: 700;
 }
 
-.house_rating-wrapper{
-    display: flex;
-    align-items: center;
-    font-size: 10px;
+.house_rating-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 10px;
 }
 
-.house_rating-wrapper div{
-    background-color: #003580;
-    color: white;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10px;
-    font-weight: 700;
-    border-radius: 5px;
-    border-bottom-left-radius: 0px;
+.house_rating-wrapper div {
+  background-color: #003580;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 2px;
+  border-bottom-left-radius: 0px;
 }
 
-.rating-text{
-    font-weight: 700;
-    margin: 0px 10px
+.rating-text {
+  font-weight: 700;
+  margin: 0px 10px;
 }
 
-.rating-opinion{
-    color:#6e6e6e;
+.rating-opinion {
+  color: #6e6e6e;
 }

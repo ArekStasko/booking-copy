@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import DateRangePicker from '@wojtekmaj/react-daterange-picker';
+import { StaticImage } from "gatsby-plugin-image"
 import "../assets/styles/components/start.css"
 
 const Start = () => {
@@ -7,33 +7,66 @@ const Start = () => {
 
   return (
     <div className="start-container">
-      <div className="form-wrapper">
         <div className="form-description">
-          <h2>Znajdź oferty hoteli, domów i wielu innych obiektów...</h2>
+          <h3>Znajdź oferty hoteli, domów i wielu innych obiektów...</h3>
           <p>Od przytulnych domków wiejskich po modne apartamenty w mieście</p>
         </div>
-
         <div className="form-container">
-          <form>
-            <input className="form-place" placeholder="Dokąd się wybierasz?" />
-            <DateRangePicker
-              onChange={onChange}
-              value={value}
-              className="form-time"
-            />      
-            <input
-              className="form-people"
-              placeholder="2 dorosłych 0 dzieci 1 pokój"
+          <div className='form-wrapper'>
+           <span className='place-form'>
+           <StaticImage
+              src="../assets/images/placeIcon.png"
+              alt="place-icon"
+              layout="fixed"
+              placeholder="tracedSVG"
+              className="booking-logo"
             />
-            <button className="form-btn">Szukaj</button>
-          </form>
+            <input className='place-input' placeholder="Dokąd się wybierasz?"/>
+           </span>
+           <span className='calendar-form'>
+           <StaticImage
+              src="../assets/images/calendarIcon.png"
+              alt="calendar-icon"
+              layout="fixed"
+              placeholder="tracedSVG"
+              className="booking-logo"
+            />
+            <div className='calendar_input-group'>
+            <input placeholder="zameldowanie"/>
+            <input placeholder="wymeldowanie"/>
+            </div>
+           </span>
+           <span className='person-form'>
+           <StaticImage
+              src="../assets/images/personIcon.png"
+              alt="person-icon"
+              layout="fixed"
+              placeholder="tracedSVG"
+              className="booking-logo"
+            />
+            <div className='person_input-group'>
+            <input placeholder="2 dorosłych"/>
+            <input placeholder="0 dzieci"/>
+            <input placeholder="1 pokój"/>
+            </div>
+            <StaticImage
+              src="../assets/images/arrowsIcon.png"
+              alt="person-icon"
+              layout="fixed"
+              placeholder="tracedSVG"
+              className="booking-logo"
+            />
+           </span>
+           <div className='form-btn'>
+             <button>Szukaj</button>
+           </div>
+          </div>
           <div className="business-checkbox">
             <input id="business" type="checkbox" />
             <label htmlFor="business">Podróżuję służbowo</label>
           </div>
         </div>
       </div>
-    </div>
   )
 }
 
