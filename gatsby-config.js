@@ -12,6 +12,15 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-transformer-json`,
     {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Roboto`,
+          `source sans pro\:100,300,400,700` 
+        ],
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

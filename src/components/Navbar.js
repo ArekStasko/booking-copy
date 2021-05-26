@@ -142,7 +142,7 @@ const [nav, setNav] = useState(true)
               />
               <p>Koronawirus (COVID-19) - wsparcie</p>
             </div>
-            <ArrowIcon show={show} className="info-btn">
+            <ArrowIcon onClick={()=>setShow(!show)} show={show} className="info-btn">
               <StaticImage
                 src="../assets/images/arrow-icon.png"
                 alt="arrow-icon"
@@ -150,7 +150,6 @@ const [nav, setNav] = useState(true)
                 placeholder="tracedSVG"
                 width={20}
                 height={20}
-                onClick={()=>setShow(!show)}
               />
             </ArrowIcon>
           </div>

@@ -1,9 +1,8 @@
-import React, {useState} from "react"
+import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import "../assets/styles/components/start.css"
 
 const Start = () => {
-  const [value, onChange] = useState([new Date(), new Date()]);
 
   return (
     <div className="start-container">
